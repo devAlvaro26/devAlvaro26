@@ -1,6 +1,10 @@
 name: Generate Snake
 
 on:
+  # Run automatically every 24 hours
+  schedule:
+    - cron: "0 */24 * * *"
+  
   # Allow manual execution from the Actions tab
   workflow_dispatch:
   
